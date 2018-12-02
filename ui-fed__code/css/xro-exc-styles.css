@@ -1,1 +1,136 @@
+/*
+phone : Most common screen size for mobile devices
+tablet-portrait : Most common screen size for tablet devices in portrait view
+tablet-landscape : Most common screen size for tablet devices in landscape view
+big-desktop : Most common screen size for desktop computers
+*/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #1111;
+}
+
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.header {
+    height: 50px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .header {
+        height: 80px;
+    }
+}
+
+.header_heading {
+    float: left;
+    width: 80%;
+}
+
+@media (max-width: 600px) {
+    .header_heading {
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.header_heading_title {
+    padding-top: 8px;
+    padding-left: 20px;
+}
+
+@media (max-width: 600px) {
+    .header_heading_title {
+        padding: 0;
+    }
+}
+
+.header_search-bar {
+    float: left;
+    width: 20%;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width: 600px) {
+    .header_search-bar {
+        width: 100%;
+        padding: 10px 10px;
+    }
+}
+
+.header_search-bar input {
+    height: 31px;
+    width: 100%;
+    position: relative;
+}
+
+.header_search-bar .search-icon {
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    color: #000000;
+}
+
+@media (max-width: 600px) {
+    .header_search-bar .search-icon {
+        right: 20px;
+        top: 38px;
+    }
+}
+
+.section {
+    width: 70%;
+    float: left;
+    height: 100vh;
+    border: 1px solid #000000;
+    color: #000000;
+}
+
+.section_content {
+    padding: 20px 0 0 20px;
+}
+
+@media (max-width: 600px) {
+    .section {
+        width: 100%;
+    }
+}
+
+.aside {
+    width: 30%;
+    float: left;
+    height: 100vh;
+    border: 1px solid #000000;
+    background-color: #dcdcdc;
+    text-align: center;
+    color: #888888;
+}
+
+.aside_title {
+    padding-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .aside {
+        width: 100%;
+    }
+}
