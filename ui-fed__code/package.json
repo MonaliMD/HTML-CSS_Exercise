@@ -1,0 +1,14 @@
+{
+  "name": "xero",
+  "version": "1.0.0",
+  "description": "MONALI",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/xro-exc-styles.css"
+  },
+  "author": "monali",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.10.0"
+  }
+}
