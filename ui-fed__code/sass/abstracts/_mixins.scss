@@ -1,0 +1,21 @@
+/*
+phone : Most common screen size for mobile devices
+tablet-portrait : Most common screen size for tablet devices in portrait view
+tablet-landscape : Most common screen size for tablet devices in landscape view
+big-desktop : Most common screen size for desktop computers
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == phone{
+        @media (max-width: 600px) { @content };
+    }
+    @if $breakpoint == tablet-port{
+        @media (max-width: 900px) { @content };
+    }
+    @if $breakpoint == tablet-land{
+        @media (max-width: 1200px) { @content };
+    }
+    @if $breakpoint == big-desktop{
+         @media (min-width: 1800px) { @content };
+    }
+}
