@@ -1,0 +1,124 @@
+//Assigning header styles
+.header {
+    height: 50px;
+    background-color: $color-primary;
+    color: $color-white;
+
+    //Mobile view style for header
+    @include respond(phone) {
+        height: 80px;
+    }
+
+    //Starting styles for left section of header
+    &_heading {
+        float: left;
+        width: 80%;
+
+        //Mobile view for left section of header
+        @include respond(phone) {
+            text-align: center;
+            width: 100%;
+            padding: 0;
+
+        }
+
+        //Styles for left section header title
+        &_title {
+            padding-top: 8px;
+            padding-left: 20px;
+
+            //Mobile view style for title
+            @include respond(phone) {
+                padding: 0;
+
+            }
+        }
+    }
+
+    // End of Left section of the header
+
+
+    //Starting styles for right section of header
+    //Styles for search bar
+    &_search-bar {
+        float: left;
+        width: 20%;
+        padding-top: 10px;
+        padding-right: 10px;
+
+        //Mobile view styles for search bar
+        @include respond(phone) {
+            width: 100%;
+            padding: 10px 10px;
+        }
+
+        //Styels for search input element
+        input {
+            height: 31px;
+            width: 100%;
+            position: relative;
+
+        }
+
+        //Styels for search input icon
+        .search-icon {
+            position: absolute;
+            right: 20px;
+            top: 13px;
+            color: $color-primary;
+
+            //Mobile view of styles for search icon
+            @include respond(phone) {
+                right: 20px;
+                top: 38px;
+            }
+        }
+    }
+
+    //End of right section of the header
+}
+
+//End of header
+
+//Starting content section
+.section {
+    width: 70%;
+    float: left;
+    height: 100vh;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+
+    &_content {
+        padding: 20px 0 0 20px;
+    }
+
+    //Mobile view of the style of content section
+    @include respond(phone) {
+        width: 100%;
+    }
+}
+
+//Ending content section
+
+
+//Starting of styles of sidebar
+.aside {
+    width: 30%;
+    float: left;
+    height: 100vh;
+    border: 1px solid $color-primary;
+    background-color: $color-secondery;
+    text-align: center;
+    color: $color-light-gray;
+
+    &_title {
+        padding-top: 20px;
+
+    }
+
+    //Monile view of the side bar
+    @include respond(phone) {
+        width: 100%;
+    }
+
+}
